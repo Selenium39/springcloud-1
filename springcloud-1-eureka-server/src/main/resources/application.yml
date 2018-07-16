@@ -1,0 +1,12 @@
+server:
+  port: 1111
+#服务注册中心会尝试把自己作为客户端注册,所以要禁用它的客户端注册行为
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false  #代表不能向注册中心注册自己
+    fetch-registry: false  #注册中心职责就是维护服务实例,并不需要去检索服务
+    service-url.defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    enable-self-preservation: false  #关闭自我保护机制，以确保注册中心可以讲不可用的实例正确剔除

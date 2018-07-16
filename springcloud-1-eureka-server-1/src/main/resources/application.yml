@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 1111
+eureka:
+  instance:
+    hostname: wantao
+  client:
+    service-url.defaultZone: http://wantao1:1112/eureka/

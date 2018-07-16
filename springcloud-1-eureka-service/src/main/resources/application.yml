@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: hello-service
+eureka:
+  client:
+    service-url.defaultZone: http://localhost:1111/eureka/,http://wantao:1111/eureka/,http://wantao1:1112/eureka/
