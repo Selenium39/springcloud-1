@@ -2,6 +2,7 @@
 spring cloud eureka
 
                            服务治理:Spring Cloud Eureka
+                           客户端负载均衡:Spring Cloud Ribbon
 1.搭建服务注册中心(eureka-server)<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;1.@EnableEurekaServer：开启服务注册中心<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;2.在配置文件中设置属性<br/>
